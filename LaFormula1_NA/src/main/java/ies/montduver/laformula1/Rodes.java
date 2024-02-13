@@ -38,10 +38,28 @@ public class Rodes {
 
     /* TO DO: Tornarà un String segons el valor (int) de l’atribut tipo_neumatic*/
     public String getTipo_neumatic() {
-       return "";
+       switch (tipo_neumatic){
+           case 1: 
+               System.out.println("Blando");
+               break;
+           case 2:
+               System.out.println("Medio");
+               break;
+           case 3:
+               System.out.println("Duro");
+               break;
+           case 4:
+               System.out.println("Lluvia");
+               break;
+           case 5:
+               System.out.println("Lluvia extrema");
+               break;
+       }
+        return "";
     }
 
     public void setTipo_neumatic(int tipo_neumatic) {
         this.tipo_neumatic = tipo_neumatic;
     }
+        
 }
