@@ -4,6 +4,7 @@
  */
 package ies.montduver.laformula1;
 
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -14,6 +15,52 @@ import javax.swing.JOptionPane;
  * @author jasb
  */
 public class Formula1 {
+  
+    private Escuderia escuderia;
+    private int numMecanics;
+
+    public Formula1(Escuderia escuderia, int numMecanics) {
+        this.escuderia = escuderia;
+        this.numMecanics = numMecanics;
+    }
+
+    public Escuderia getEscuderia() {
+        return escuderia;
+    }
+
+    public int getNumMecanics() {
+        return numMecanics;
+    }
+
+    public static String getRESET() {
+        return RESET;
+    }
+
+    public static String getRED() {
+        return RED;
+    }
+
+    public static String getGREEN() {
+        return GREEN;
+    }
+
+    public static String getBLUE() {
+        return BLUE;
+    }
+
+    public static String getMORADO() {
+        return MORADO;
+    }
+
+    public void setEscuderia(Escuderia escuderia) {
+        this.escuderia = escuderia;
+    }
+
+    public void setNumMecanics(int numMecanics) {
+        this.numMecanics = numMecanics;
+    }
+    
+    
 
     public static final String RESET = "\u001B[30m";
     public static final String RED = "\u001B[31m";
@@ -135,6 +182,11 @@ public class Formula1 {
         
         //Crear 5 escuderies
         Escuderia McLaren = new Escuderia("McLaren", 125000000.0);
+        Escuderia Ferrari = new Escuderia("Ferrari", 135000000.0);
+        Escuderia AstonMartinF1 = new Escuderia("Aston Martin F1", 120000000.0);
+        Escuderia Mercedes = new Escuderia("Mercedes", 145000000.0);
+        Escuderia Williams = new Escuderia("Williams", 130000000.0);
+        Escuderia RedBull = new Escuderia("Red Bull", 155000000.0);
         
         //Crear els boxes de cada escuderia i afegir-los al pitLane
         Box box_ML = new Box(McLaren, 12);
