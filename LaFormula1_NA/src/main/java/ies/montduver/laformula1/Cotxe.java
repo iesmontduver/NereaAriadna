@@ -14,15 +14,15 @@ public class Cotxe {
     indicades com a atributs creades)
     */
     
-    //private final Rodes rodes;
-    //private final Motor motor;
-    //private final Xasis xasis;
-    //private Escuderia escuderia;
-    //private Pilot pilot;
-    //private double tempsCarrera;
+    private final Rodes rodes;
+    private final Motor motor;
+    private final Xasis xasis;
+    private Escuderia escuderia;
+    private Pilot pilot;
+    private double tempsCarrera;
     
     
-    /*public Cotxe(Escuderia escuderia, Rodes rodes, Motor motor, Xasis xasis) {
+    public Cotxe(Escuderia escuderia, Rodes rodes, Motor motor, Xasis xasis) {
         this.escuderia = escuderia;
         this.rodes = rodes;
         this.motor = motor;
@@ -70,13 +70,16 @@ public class Cotxe {
 
         }                               
     }
-    */
+   
     
     /* TO DO: 
      1) Mostrarà un missatge per pantalla amb el contingut d’alguns atributs del cotxe. 
      2) Assignarà l’atribut tempsCarrera al valor 0.0   
     */ 
     public void arrancarMotors(){
+        System.out.println( pilot.getNom() + "ha arrancat el seu motor" + motor.getTipo() + "montat amb rodes" +rodes.getTipo_neumatic());
+        tempsCarrera = 0.0;
+        
         
     }
     
