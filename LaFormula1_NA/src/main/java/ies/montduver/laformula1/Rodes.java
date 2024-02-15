@@ -61,5 +61,6 @@ public class Rodes {
     public void setTipo_neumatic(int tipo_neumatic) {
         this.tipo_neumatic = tipo_neumatic;
     }
+    
         
 }

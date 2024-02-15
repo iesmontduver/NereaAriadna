@@ -52,7 +52,12 @@ public class Cotxe {
     public void setTempsCarrera(double tempsCarrera) {
         this.tempsCarrera = tempsCarrera;
     } 
-          
+
+    public Rodes getRodes() {
+        return rodes;
+    }
+     
+    
     public void ferEixida(){
         
         int n = (int) (Math.random() * 3) + 1;
