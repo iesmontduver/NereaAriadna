@@ -88,7 +88,10 @@ public class Cotxe {
      2) Assignarà l’atribut tempsCarrera al valor 0.0
     */
     public void accident(){
-              
+        System.out.println(pilot.getNom() + "ha tingut un accident i ha d'abandonar la carrera");
+        tempsCarrera = 0.0;
+        
+           
     }            
     
 }
