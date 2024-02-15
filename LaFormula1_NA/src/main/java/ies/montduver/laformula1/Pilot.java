@@ -9,14 +9,14 @@ package ies.montduver.laformula1;
  * @author nerbolcas
  */
 public class Pilot {
-    
+ 
     private String nom;
     private Escuderia escuderia;
     private int numero;
     private int punts;
     private double sou;
 
-    public Pilot(String nom, Escuderia escuderia, int numero, int punts, double sou) {
+    public Pilot(String nom, Escuderia escuderia, int numero) {
         this.nom = nom;
         this.escuderia = escuderia;
         this.numero = numero;
@@ -63,6 +63,5 @@ public class Pilot {
     public void setSou(double sou) {
         this.sou = sou;
     }
-    
-    
+
 }
